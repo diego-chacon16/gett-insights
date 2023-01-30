@@ -1,5 +1,7 @@
 # Insights from Failed Orders
 
+<img src="https://media.giphy.com/media/SLr8qaoRH6Hmw/giphy.gif" width="400" height="200"/>
+
 ## Who is Gett?
 
 + Previously known as GetTaxi, is an Israeli-developed technology platform solely focused on corporate Ground Transportation Management (GTM).
