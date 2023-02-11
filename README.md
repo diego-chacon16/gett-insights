@@ -15,6 +15,12 @@
 1. Distribution of orders according to reasons for failure: cancellations before and after driver assignment, and reasons for order rejection. Analyse the resulting plot. Which category has the highest number of orders?
 2. Distribution of failed orders by hours. Is there a trend that certain hours have an abnormally high proportion of one category or another? What hours are the biggest fails? How can this be explained?
 3. What is the average time to cancel on average? Plot the average time to cancellation with and without driver, by the hour. If there are any outliers in the data, it would be better to remove them. Can we draw any conclusions from this plot?
+
+ + When are most of these cancellations happening from an hour perspective?
+ + What are the drivers behind so many customers cancelling their orders before a driver is assigned?
+ + Could the Customer wait time for a driver being assigned to their order be a leading cause?
+ + How long are Customers approximately waiting to cancel their order prior to a driver being assigned?
+ 
 4. Distribution of average ETA by hours. How can this plot be explained?
 
 ## Data Description
