@@ -42,3 +42,21 @@ The data_offers data set is a simple map with 2 columns:
 
 + order_gk - order number, associated with the same column from the orders data set
 + offer_id - ID of an offer
+
+
+## Bonus - Guided Project
+
+### Using Geospatial Analysis Tools to calculate how many hexes contain 80% of cancellations
+
++ Use Uber's open source H3 and Folium libraries to build analysis
++ Build a table to sum the cumulative percentage of cancellations
++ This can be done by creating a count of the order_gk column, and then apply a cumulative percentage
+
+### What is H3?
+
++ At its core, H3 is a geospatial analysis tool that provides a hexagonal, hierarchical spatial index to gain insights from large geospatial datasets 
+
+### What is Folium?
+
++ Builds on the data wrangling strengths of the Python ecosystem and the mapping strengths of the leaflet.js library
++ folium makes it easy to visualize data that’s been manipulated in Python on an interactive leaflet map. It enables both the binding of data to a map for choropleth visualizations as well as passing rich vector/raster/HTML visualizations as markers on the map
