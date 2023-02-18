@@ -44,7 +44,7 @@ The data_offers data set is a simple map with 2 columns:
 + offer_id - ID of an offer
 
 
-## Bonus - Guided Project
+## Bonus
 
 ### Using Geospatial Analysis Tools to calculate how many hexes contain 80% of cancellations
 
