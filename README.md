@@ -6,9 +6,9 @@
 + They have an application where clients can order taxis, and drivers can accept their rides (offers).
 + At the moment, when the client clicks the Order button in the application, the matching system searches for the most relevant drivers and offers them the order.
 
-## Purpose of this Project
+## Objective
 
-### We would like to investigate some matching metrics for orders that did not completed successfully, i.e., the customer didn't end up getting a car.
+### Investigate insights as to why there were orders that were not completed successfully. (I.e. The customer didn't end up getting a car)
 
 #### This notebook will explore:
 
