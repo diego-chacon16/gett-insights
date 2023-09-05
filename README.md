@@ -8,7 +8,9 @@
 
 ## Objective
 
-### Investigate insights as to why there were orders that were not completed successfully. (I.e. The customer didn't end up getting a car)
+### Investigate insights as to why there were orders that were not completed successfully. 
+
+#### (I.e. The customer didn't end up getting a car)
 
 #### This notebook will explore:
 
