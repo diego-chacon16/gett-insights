@@ -8,7 +8,7 @@
 
 ## Objective
 
-### Investigate insights as to why there were orders that were not completed successfully. 
+The primary objective is to understand the distribution of failed orders and identify key factors contributing to unsuccessful outcomes. The analysis is structured to answer specific questions related to order cancellations, rejection reasons, and customer wait times before driver assignment.
 
 #### (I.e. The customer didn't end up getting a car)
 
