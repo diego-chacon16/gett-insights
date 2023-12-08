@@ -8,26 +8,33 @@
 
 ## Objective
 
-The primary objective is to understand the distribution of failed orders and identify key factors contributing to unsuccessful outcomes. The analysis is structured to answer specific questions related to order cancellations, rejection reasons, and customer wait times before driver assignment.
-
-#### (I.e. The customer didn't end up getting a car)
+The primary objective is to understand the distribution of failed orders and identify key factors contributing to unsuccessful outcomes. The analysis is structured to answer specific questions related to order cancellations, rejection reasons, and customer wait times before driver assignment. __(I.e. The customer didn't end up getting a car)__
 
 #### This notebook will explore:
 
-1. Distribution of orders according to reasons for failure: cancellations before and after driver assignment, and reasons for order rejection. Analyse the resulting plot. Which category has the highest number of orders?
-2. Distribution of failed orders by hours. Is there a trend that certain hours have an abnormally high proportion of one category or another? What hours are the biggest fails? How can this be explained?
-3. What is the average time to cancel on average? Plot the average time to cancellation with and without driver, by the hour. If there are any outliers in the data, it would be better to remove them. Can we draw any conclusions from this plot?
-
- + When are most of these cancellations happening from an hour perspective?
- + What are the drivers behind so many customers cancelling their orders before a driver is assigned?
- + Could the Customer wait time for a driver being assigned to their order be a leading cause?
- + How long are Customers approximately waiting to cancel their order prior to a driver being assigned?
- 
-4. Distribution of average ETA by hours. How can this plot be explained?
-
+1. Distribution of Order Failure
+   + Categorize reasons for failure, differentiating between cancellations before and after driver assignment.
+   + Analyze resulting plots to identify the category with the highest number of orders.
+2. Temporal Analysis
+   + Examine the distribution of failed orders by hours to identify trends.
+   + Highlight hours with abnormally high proportions of specific failure categories.
+3. Average time to cancel
+   + Calculate and plot the average time to cancel, both with and without driver assignment, by the hour.
+   + Identify outliers and draw conclusions from the plot.
+4. Cancellation Timing
+   + Determine when most cancellations occur from an hourly perspective.
+   + Investigate factors behind customers canceling orders before a driver is assigned.
+5. Customer Wait Time
+   + Explore if the wait time for a driver assignment influences order cancellations.
+   + Analyze the duration customers are waiting before canceling their orders.
+6. ETA Analysis
+   + Examine the distribution of average Estimated Time of Arrival (ETA) by hours.
+     
 ## Data Description
 
-We have two data sets: data_orders and data_offers, both being stored in a CSV format. The data_orders data set contains the following columns:
+### Table 1: data_orders
+
+Data specific to the order
 
 + order_datetime - time of the order
 + origin_longitude - longitude of the order
@@ -40,19 +47,18 @@ We have two data sets: data_orders and data_offers, both being stored in a CSV f
 + is_driver_assigned_key - whether a driver has been assigned
 + cancellation_time_in_seconds - how many seconds passed before cancellation
 
-The data_offers data set is a simple map with 2 columns:
+### Table 2: data_offers
+
+Simple map with two columns
 
 + order_gk - order number, associated with the same column from the orders data set
 + offer_id - ID of an offer
 
-
-## Bonus
+## Bonus: Geospatial Analysis
 
 ### Using Geospatial Analysis Tools to calculate how many hexes contain 80% of cancellations
 
-+ Use Uber's open source H3 and Folium libraries to build analysis
-+ Build a table to sum the cumulative percentage of cancellations
-+ This can be done by creating a count of the order_gk column, and then apply a cumulative percentage
+A bonus aspect of this analysis involves leveraging Geospatial Analysis Tools to calculate the hexagons containing 80% of cancellations. Uber's open source H3 and Folium libraries are employed for this purpose. H3 provides a hexagonal, hierarchical spatial index, while Folium facilitates interactive data visualization on leaflet maps.
 
 ### What is H3?
 
